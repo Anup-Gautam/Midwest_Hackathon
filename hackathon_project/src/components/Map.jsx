@@ -36,7 +36,7 @@ const Map = ({ origin, destination }) => {
     } else {
       // Load Google Maps script if not available
       const script = document.createElement("script");
-      script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyAMglNkDOhuGK7Z9VeyMm1WHA5i0SfhgX0&libraries=places`;
+      script.src = `https://maps.googleapis.com/maps/api/js?key=APIKEY&libraries=places`;
       script.onload = loadMap;
       document.head.appendChild(script);
     }
