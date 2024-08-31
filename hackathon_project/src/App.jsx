@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Map from "./components/Map";
+import MapComponent from "./components/MapComponent";
 
 const App = () => {
   const [origin, setOrigin] = useState("");
@@ -13,7 +14,7 @@ const App = () => {
   return (
     <div>
       <h1> Maps Directions </h1>
-      <form onSubmit={handleSubmit}>
+      {/* <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="origin">From:</label>
           <input
@@ -37,8 +38,9 @@ const App = () => {
           />
         </div>
         <button type="submit">Get Directions</button>
-      </form>
-      <Map origin={origin} destination={destination} />
+      </form> */}
+      {/* <Map origin={origin} destination={destination} /> */}
+      <MapComponent/>
     </div>
   );
 };
